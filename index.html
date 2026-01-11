@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covalent Bonds | Scientific Puzzle Game by Vicky Kumar</title>
+    <meta name="description" content="Play Covalent Bonds, a medical-grade scientific puzzle game developed by Vicky Kumar (vickyiitp). Build molecules, master valence rules, and learn chemistry." />
+    <meta name="keywords" content="Vicky Kumar, vickyiitp, AI developer, IIT Patna, 100 games, web apps, devil labs, Covalent Bonds, Chemistry Game, Educational Game" />
+    <meta name="author" content="Vicky Kumar" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vickyiitp.tech/covalent-bonds" />
+    <meta property="og:title" content="Covalent Bonds | Scientific Puzzle Game" />
+    <meta property="og:description" content="Build molecules and explore chemistry in this interactive puzzle game by Vicky Kumar." />
+    <meta property="og:image" content="https://vickyiitp.tech/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://vickyiitp.tech/covalent-bonds" />
+    <meta property="twitter:title" content="Covalent Bonds | Scientific Puzzle Game" />
+    <meta property="twitter:description" content="Build molecules and explore chemistry in this interactive puzzle game by Vicky Kumar." />
+    <meta property="twitter:image" content="https://vickyiitp.tech/og-image.jpg" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'float': 'float 6s ease-in-out infinite',
+              'spin-slow': 'spin 12s linear infinite',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f8fafc;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* Custom Utilities */
+      .bg-dot-pattern {
+        background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+        background-size: 24px 24px;
+      }
+      
+      .glass-card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+      }
+      
+      .glass-card-dark {
+        background: rgba(15, 23, 42, 0.8);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    </style>
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "name": "Vicky Kumar",
+          "url": "https://vickyiitp.tech",
+          "sameAs": [
+            "https://linkedin.com/in/vickyiitp",
+            "https://github.com/vickyiitp",
+            "https://x.com/vickyiitp",
+            "https://youtube.com/@vickyiitp",
+            "https://instagram.com/vickyiitp"
+          ],
+          "jobTitle": "AI Developer",
+          "alumniOf": "IIT Patna"
+        },
+        {
+          "@type": "WebSite",
+          "name": "Covalent Bonds",
+          "url": "https://vickyiitp.tech/covalent-bonds",
+          "author": {
+            "@type": "Person",
+            "name": "Vicky Kumar"
+          },
+          "description": "A scientific puzzle game about molecular bonding."
+        }
+      ]
+    }
+    </script>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+        "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
